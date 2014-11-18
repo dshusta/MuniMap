@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AA512241A1AFE65003BF6F9"
+               BlueprintIdentifier = "9AC62C591A1B06AF006073ED"
                BuildableName = "MuniMapTests.xctest"
                BlueprintName = "MuniMapTests"
                ReferencedContainer = "container:MuniMap.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9AA512241A1AFE65003BF6F9"
+               BlueprintIdentifier = "9AC62C591A1B06AF006073ED"
                BuildableName = "MuniMapTests.xctest"
                BlueprintName = "MuniMapTests"
                ReferencedContainer = "container:MuniMap.xcodeproj">
