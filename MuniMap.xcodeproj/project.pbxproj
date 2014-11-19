@@ -17,6 +17,10 @@
 		9A23F5D81A1C483100EF3F03 /* ApiClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A23F5D71A1C483100EF3F03 /* ApiClientSpec.swift */; };
 		9A23F5DA1A1C50D300EF3F03 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A23F5D91A1C50D300EF3F03 /* Route.swift */; };
 		9A23F5DB1A1C50D300EF3F03 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A23F5D91A1C50D300EF3F03 /* Route.swift */; };
+		9A23F5DE1A1C56CE00EF3F03 /* routes.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9A23F5DD1A1C56CE00EF3F03 /* routes.xml */; };
+		9A23F5E01A1C58F400EF3F03 /* RoutesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A23F5DF1A1C58F400EF3F03 /* RoutesParser.swift */; };
+		9A23F5E11A1C58F400EF3F03 /* RoutesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A23F5DF1A1C58F400EF3F03 /* RoutesParser.swift */; };
+		9A23F5E31A1C590A00EF3F03 /* RoutesParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A23F5E21A1C590A00EF3F03 /* RoutesParserSpec.swift */; };
 		9AA512161A1AFE65003BF6F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */; };
 		9AA512181A1AFE65003BF6F9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA512171A1AFE65003BF6F9 /* RootViewController.swift */; };
 		9AA5121D1A1AFE65003BF6F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA5121C1A1AFE65003BF6F9 /* Images.xcassets */; };
@@ -95,6 +99,9 @@
 		9A23F5D41A1C44E100EF3F03 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		9A23F5D71A1C483100EF3F03 /* ApiClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientSpec.swift; sourceTree = "<group>"; };
 		9A23F5D91A1C50D300EF3F03 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		9A23F5DD1A1C56CE00EF3F03 /* routes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = routes.xml; sourceTree = "<group>"; };
+		9A23F5DF1A1C58F400EF3F03 /* RoutesParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesParser.swift; sourceTree = "<group>"; };
+		9A23F5E21A1C590A00EF3F03 /* RoutesParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesParserSpec.swift; sourceTree = "<group>"; };
 		9AA512101A1AFE65003BF6F9 /* MuniMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuniMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA512141A1AFE65003BF6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +136,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A23F5DC1A1C56C100EF3F03 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				9A23F5DD1A1C56CE00EF3F03 /* routes.xml */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
 		9AA512071A1AFE65003BF6F9 = {
 			isa = PBXGroup;
 			children = (
@@ -153,8 +168,9 @@
 				9A23F5D41A1C44E100EF3F03 /* ApiClient.swift */,
 				9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */,
 				9AA512171A1AFE65003BF6F9 /* RootViewController.swift */,
-				9AA512131A1AFE65003BF6F9 /* Supporting Files */,
 				9A23F5D91A1C50D300EF3F03 /* Route.swift */,
+				9A23F5DF1A1C58F400EF3F03 /* RoutesParser.swift */,
+				9AA512131A1AFE65003BF6F9 /* Supporting Files */,
 			);
 			path = MuniMap;
 			sourceTree = "<group>";
@@ -175,6 +191,8 @@
 			children = (
 				9A23F5D71A1C483100EF3F03 /* ApiClientSpec.swift */,
 				9A1B59A61A1C406C006E8B0F /* RootViewControllerSpec.swift */,
+				9A23F5E21A1C590A00EF3F03 /* RoutesParserSpec.swift */,
+				9A23F5DC1A1C56C100EF3F03 /* Fixtures */,
 				9AC62C5C1A1B06AF006073ED /* Supporting Files */,
 			);
 			name = MuniMapTests;
@@ -376,6 +394,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A23F5DE1A1C56CE00EF3F03 /* routes.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +408,7 @@
 				9AA512181A1AFE65003BF6F9 /* RootViewController.swift in Sources */,
 				9A23F5DA1A1C50D300EF3F03 /* Route.swift in Sources */,
 				9AA512161A1AFE65003BF6F9 /* AppDelegate.swift in Sources */,
+				9A23F5E01A1C58F400EF3F03 /* RoutesParser.swift in Sources */,
 				9A23F5D51A1C44E100EF3F03 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,7 +420,9 @@
 				9A1B59A91A1C4186006E8B0F /* AppDelegate.swift in Sources */,
 				9A23F5D81A1C483100EF3F03 /* ApiClientSpec.swift in Sources */,
 				9A1B59A81A1C4103006E8B0F /* RootViewController.swift in Sources */,
+				9A23F5E31A1C590A00EF3F03 /* RoutesParserSpec.swift in Sources */,
 				9A23F5DB1A1C50D300EF3F03 /* Route.swift in Sources */,
+				9A23F5E11A1C58F400EF3F03 /* RoutesParser.swift in Sources */,
 				9A1B59A71A1C406C006E8B0F /* RootViewControllerSpec.swift in Sources */,
 				9A23F5D61A1C44E100EF3F03 /* ApiClient.swift in Sources */,
 			);
