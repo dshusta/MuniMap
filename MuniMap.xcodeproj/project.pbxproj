@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		9A1B59891A1B0FF8006E8B0F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC62C6E1A1B06C1006073ED /* Quick.framework */; };
 		9A1B598D1A1B0FFC006E8B0F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC62C7D1A1B06C6006073ED /* Nimble.framework */; };
+		9A1B59A71A1C406C006E8B0F /* RootViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1B59A61A1C406C006E8B0F /* RootViewControllerSpec.swift */; };
+		9A1B59A81A1C4103006E8B0F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA512171A1AFE65003BF6F9 /* RootViewController.swift */; };
+		9A1B59A91A1C4186006E8B0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */; };
 		9AA512161A1AFE65003BF6F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */; };
 		9AA512181A1AFE65003BF6F9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA512171A1AFE65003BF6F9 /* RootViewController.swift */; };
-		9AA5121B1A1AFE65003BF6F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA512191A1AFE65003BF6F9 /* Main.storyboard */; };
 		9AA5121D1A1AFE65003BF6F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA5121C1A1AFE65003BF6F9 /* Images.xcassets */; };
 		9AA512201A1AFE65003BF6F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA5121E1A1AFE65003BF6F9 /* LaunchScreen.xib */; };
 		9AA5123E1A1AFF28003BF6F9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA5123D1A1AFF28003BF6F9 /* MapKit.framework */; };
-		9AC62C8B1A1B0773006073ED /* RootViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC62C8A1A1B0773006073ED /* RootViewControllerSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,19 +86,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A1B59A61A1C406C006E8B0F /* RootViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewControllerSpec.swift; sourceTree = "<group>"; };
 		9AA512101A1AFE65003BF6F9 /* MuniMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuniMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA512141A1AFE65003BF6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AA512171A1AFE65003BF6F9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		9AA5121A1A1AFE65003BF6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AA5121C1A1AFE65003BF6F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9AA5121F1A1AFE65003BF6F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9AA5123D1A1AFF28003BF6F9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		9AC62C5A1A1B06AF006073ED /* MuniMap Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "MuniMap Tests.xctest"; path = MuniMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC62C5A1A1B06AF006073ED /* MuniMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuniMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AC62C5D1A1B06AF006073ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC62C651A1B06C1006073ED /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Externals/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		9AC62C751A1B06C6006073ED /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Externals/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
-		9AC62C8A1A1B0773006073ED /* RootViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewControllerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				9AA512101A1AFE65003BF6F9 /* MuniMap.app */,
-				9AC62C5A1A1B06AF006073ED /* MuniMap Tests.xctest */,
+				9AC62C5A1A1B06AF006073ED /* MuniMapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +144,6 @@
 			children = (
 				9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */,
 				9AA512171A1AFE65003BF6F9 /* RootViewController.swift */,
-				9AA512191A1AFE65003BF6F9 /* Main.storyboard */,
 				9AA5121C1A1AFE65003BF6F9 /* Images.xcassets */,
 				9AA5121E1A1AFE65003BF6F9 /* LaunchScreen.xib */,
 				9AA512131A1AFE65003BF6F9 /* Supporting Files */,
@@ -164,7 +163,7 @@
 		9AC62C5B1A1B06AF006073ED /* MuniMapTests */ = {
 			isa = PBXGroup;
 			children = (
-				9AC62C8A1A1B0773006073ED /* RootViewControllerSpec.swift */,
+				9A1B59A61A1C406C006E8B0F /* RootViewControllerSpec.swift */,
 				9AC62C751A1B06C6006073ED /* Nimble.xcodeproj */,
 				9AC62C651A1B06C1006073ED /* Quick.xcodeproj */,
 				9AC62C5C1A1B06AF006073ED /* Supporting Files */,
@@ -238,7 +237,7 @@
 			);
 			name = MuniMapTests;
 			productName = "MuniMap Tests";
-			productReference = 9AC62C5A1A1B06AF006073ED /* MuniMap Tests.xctest */;
+			productReference = 9AC62C5A1A1B06AF006073ED /* MuniMapTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -357,7 +356,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AA5121B1A1AFE65003BF6F9 /* Main.storyboard in Resources */,
 				9AA512201A1AFE65003BF6F9 /* LaunchScreen.xib in Resources */,
 				9AA5121D1A1AFE65003BF6F9 /* Images.xcassets in Resources */,
 			);
@@ -386,7 +384,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AC62C8B1A1B0773006073ED /* RootViewControllerSpec.swift in Sources */,
+				9A1B59A91A1C4186006E8B0F /* AppDelegate.swift in Sources */,
+				9A1B59A81A1C4103006E8B0F /* RootViewController.swift in Sources */,
+				9A1B59A71A1C406C006E8B0F /* RootViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,14 +401,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9AA512191A1AFE65003BF6F9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9AA5121A1A1AFE65003BF6F9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9AA5121E1A1AFE65003BF6F9 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -535,6 +527,7 @@
 				INFOPLIST_FILE = "MuniMap Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuniMap.app/MuniMap";
 			};
@@ -552,6 +545,7 @@
 				INFOPLIST_FILE = "MuniMap Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuniMap.app/MuniMap";
 			};
 			name = Release;
