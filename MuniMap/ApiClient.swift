@@ -14,9 +14,10 @@ class ApiClient {
 
     func fetchAllRoutes(routes: ([Route]) -> ()) {
         let path = "http://services.my511.org/Transit2.0/GetRoutesForAgency.aspx?token=\(apiToken)&agencyName=SF-MUNI"
-        urlSession.dataTaskWithURL(NSURL(string: path)!, completionHandler: { (data : NSData!, response : NSURLResponse!, error : NSError!) -> Void in
+        let dataTask = urlSession.dataTaskWithURL(NSURL(string: path)!, completionHandler: { (data : NSData!, response : NSURLResponse!, error : NSError!) -> Void in
             routes(self.parser.parseRoutesData(data))
         })
+        dataTask.resume()
     }
 
 }

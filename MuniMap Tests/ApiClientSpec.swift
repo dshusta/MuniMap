@@ -4,7 +4,7 @@ import Nimble
 // Mocks by subclassing, like an animal.
 class MockURLSessionDataTask : NSURLSessionDataTask {
     override func resume() {
-        suspend()
+        
     }
 }
 

@@ -7,7 +7,7 @@ class RootViewControllerSpec: QuickSpec {
     override func spec() {
         var subject : RootViewController!
         beforeEach {
-            subject = RootViewController()
+            subject = RootViewController(nibName: nil, bundle: nil)
             expect(subject.view).toNot(beNil())
         }
 
