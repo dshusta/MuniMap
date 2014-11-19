@@ -45,12 +45,15 @@ class ApiClientSpec: QuickSpec {
 
             context("when the urlSession successfully fetches routes") {
                 beforeEach {
-                    let data = "Hello!".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
-                    urlSession.lastCompletionHandler(data, nil, nil)
+                    let routesURL = NSBundle(forClass: self.dynamicType).URLForResource("routes", withExtension: "xml")!
+                    let routesData = NSData(contentsOfURL: routesURL)!
+
+                    urlSession.lastCompletionHandler(routesData, nil, nil)
                 }
 
-                it ("should pass back a Route I guess") {
-                    expect(countElements(routes)).to(equal(1))
+                it ("should pass back an array of routes") {
+                    let route = routes![0]
+                    expect(route.name).to(equal("1-California"))
                 }
             }
         }

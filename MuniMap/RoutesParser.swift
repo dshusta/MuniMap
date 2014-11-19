@@ -8,7 +8,7 @@ class RoutesParser: NSObject, NSXMLParserDelegate {
         collectedRoutes = []
     }
 
-    func parseRoutesData(data : NSData) -> [Route]? {
+    func parseRoutesData(data : NSData) -> [Route]! {
         collectedRoutes = []
 
         var xmlParser = NSXMLParser(data: data)
