@@ -11,10 +11,10 @@ class RootViewController: UIViewController {
         mapview.autoresizingMask = .FlexibleWidth | .FlexibleHeight
         view.addSubview(mapview)
 
-        let span = MKCoordinateSpanMake(0.25, 0.25);
-        let buenaVistaPark = CLLocationCoordinate2DMake(37.768783, -122.442113);
-        let region = MKCoordinateRegionMake(buenaVistaPark, span);
-        mapview.region = region;
+        let span = MKCoordinateSpanMake(0.25, 0.25)
+        let buenaVistaPark = CLLocationCoordinate2DMake(37.768783, -122.442113)
+        let region = MKCoordinateRegionMake(buenaVistaPark, span)
+        mapview.region = region
     }
 }
 

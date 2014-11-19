@@ -14,7 +14,7 @@ class RootViewControllerSpec: QuickSpec {
         it("have a mapview that starts in San Francisco") {
             expect(subject.mapview).toNot(beNil())
 
-            let buenaVistaPark = CLLocationCoordinate2DMake(37.768783, -122.442113);
+            let buenaVistaPark = CLLocationCoordinate2DMake(37.768783, -122.442113)
             let buenaVistaPoint = MKMapPointForCoordinate(buenaVistaPark)
             let visibleMapRect = subject.mapview.visibleMapRect
             expect(MKMapRectContainsPoint(visibleMapRect, buenaVistaPoint)).to(beTruthy())
