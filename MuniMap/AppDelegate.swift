@@ -7,7 +7,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        let rootViewController = RootViewController(nibName: nil, bundle: nil)
+        window?.rootViewController = rootViewController
+        window?.makeKeyAndVisible()
+
         return true
     }
 
