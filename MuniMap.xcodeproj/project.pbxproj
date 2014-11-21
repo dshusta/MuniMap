@@ -27,6 +27,10 @@
 		9A8E43211A1EEDFB00D5CB97 /* StopsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E431F1A1EEDFB00D5CB97 /* StopsParser.swift */; };
 		9A8E43231A1EEE6300D5CB97 /* StopsParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E43221A1EEE6300D5CB97 /* StopsParserSpec.swift */; };
 		9A8E43261A1EEEA800D5CB97 /* stops.xml in Resources */ = {isa = PBXBuildFile; fileRef = 9A8E43241A1EEEA800D5CB97 /* stops.xml */; };
+		9A8E43351A1EF32000D5CB97 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E43341A1EF32000D5CB97 /* CHCSVParser.m */; };
+		9A8E43361A1EF32000D5CB97 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8E43341A1EF32000D5CB97 /* CHCSVParser.m */; };
+		9A8E43381A1EF37A00D5CB97 /* stops.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9A8E43371A1EF37A00D5CB97 /* stops.csv */; };
+		9A8E43391A1EF37A00D5CB97 /* stops.csv in Resources */ = {isa = PBXBuildFile; fileRef = 9A8E43371A1EF37A00D5CB97 /* stops.csv */; };
 		9AA512161A1AFE65003BF6F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */; };
 		9AA512181A1AFE65003BF6F9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA512171A1AFE65003BF6F9 /* RootViewController.swift */; };
 		9AA5121D1A1AFE65003BF6F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA5121C1A1AFE65003BF6F9 /* Images.xcassets */; };
@@ -112,6 +116,10 @@
 		9A8E431F1A1EEDFB00D5CB97 /* StopsParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsParser.swift; sourceTree = "<group>"; };
 		9A8E43221A1EEE6300D5CB97 /* StopsParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsParserSpec.swift; sourceTree = "<group>"; };
 		9A8E43241A1EEEA800D5CB97 /* stops.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = stops.xml; sourceTree = "<group>"; };
+		9A8E43331A1EF32000D5CB97 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHCSVParser.h; path = Externals/CHCSVParser/CHCSVParser/CHCSVParser/CHCSVParser.h; sourceTree = SOURCE_ROOT; };
+		9A8E43341A1EF32000D5CB97 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHCSVParser.m; path = Externals/CHCSVParser/CHCSVParser/CHCSVParser/CHCSVParser.m; sourceTree = SOURCE_ROOT; };
+		9A8E43371A1EF37A00D5CB97 /* stops.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stops.csv; sourceTree = "<group>"; };
+		9A8E43401A1EF7D200D5CB97 /* MuniMap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "MuniMap-Bridging-Header.h"; path = "MuniMap/MuniMap-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		9AA512101A1AFE65003BF6F9 /* MuniMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuniMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA512141A1AFE65003BF6F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +163,24 @@
 			name = Fixtures;
 			sourceTree = "<group>";
 		};
+		9A8E43321A1EF32000D5CB97 /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				9A8E43331A1EF32000D5CB97 /* CHCSVParser.h */,
+				9A8E43341A1EF32000D5CB97 /* CHCSVParser.m */,
+			);
+			name = CHCSVParser;
+			path = Externals/CHCSVParser/CHCSVParser/CHCSVParser;
+			sourceTree = SOURCE_ROOT;
+		};
+		9A8E433A1A1EF37D00D5CB97 /* Permanent Data */ = {
+			isa = PBXGroup;
+			children = (
+				9A8E43371A1EF37A00D5CB97 /* stops.csv */,
+			);
+			name = "Permanent Data";
+			sourceTree = "<group>";
+		};
 		9AA512071A1AFE65003BF6F9 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +217,9 @@
 		9AA512131A1AFE65003BF6F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9A8E43401A1EF7D200D5CB97 /* MuniMap-Bridging-Header.h */,
+				9A8E433A1A1EF37D00D5CB97 /* Permanent Data */,
+				9A8E43321A1EF32000D5CB97 /* CHCSVParser */,
 				9AA5121E1A1AFE65003BF6F9 /* LaunchScreen.xib */,
 				9AA5121C1A1AFE65003BF6F9 /* Images.xcassets */,
 				9AA5123D1A1AFF28003BF6F9 /* MapKit.framework */,
@@ -400,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AA512201A1AFE65003BF6F9 /* LaunchScreen.xib in Resources */,
+				9A8E43381A1EF37A00D5CB97 /* stops.csv in Resources */,
 				9AA5121D1A1AFE65003BF6F9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A23F5DE1A1C56CE00EF3F03 /* routes.xml in Resources */,
+				9A8E43391A1EF37A00D5CB97 /* stops.csv in Resources */,
 				9A8E43261A1EEEA800D5CB97 /* stops.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +455,7 @@
 				9A23F5DA1A1C50D300EF3F03 /* Route.swift in Sources */,
 				9AA512161A1AFE65003BF6F9 /* AppDelegate.swift in Sources */,
 				9A8E43201A1EEDFB00D5CB97 /* StopsParser.swift in Sources */,
+				9A8E43351A1EF32000D5CB97 /* CHCSVParser.m in Sources */,
 				9A23F5E01A1C58F400EF3F03 /* RoutesParser.swift in Sources */,
 				9A23F5D51A1C44E100EF3F03 /* ApiClient.swift in Sources */,
 				9A8E43151A1EED8800D5CB97 /* Stop.swift in Sources */,
@@ -442,6 +474,7 @@
 				9A23F5E31A1C590A00EF3F03 /* RoutesParserSpec.swift in Sources */,
 				9A23F5DB1A1C50D300EF3F03 /* Route.swift in Sources */,
 				9A8E43231A1EEE6300D5CB97 /* StopsParserSpec.swift in Sources */,
+				9A8E43361A1EF32000D5CB97 /* CHCSVParser.m in Sources */,
 				9A23F5E11A1C58F400EF3F03 /* RoutesParser.swift in Sources */,
 				9A1B59A71A1C406C006E8B0F /* RootViewControllerSpec.swift in Sources */,
 				9A23F5D61A1C44E100EF3F03 /* ApiClient.swift in Sources */,
@@ -556,6 +589,7 @@
 				INFOPLIST_FILE = MuniMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MuniMap/MuniMap-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -566,6 +600,7 @@
 				INFOPLIST_FILE = MuniMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MuniMap/MuniMap-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -585,7 +620,8 @@
 				INFOPLIST_FILE = "MuniMap Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MuniMap/MuniMap-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuniMap.app/MuniMap";
 			};
@@ -603,7 +639,8 @@
 				INFOPLIST_FILE = "MuniMap Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MuniMap/MuniMap-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuniMap.app/MuniMap";
 			};
 			name = Release;
