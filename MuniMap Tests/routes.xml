@@ -1,17 +1,17 @@
 <RTT>
-    <AgencyList>
-        <Agency Name="SF-MUNI" HasDirection="True" Mode="Bus">
-            <RouteList>
-                <Route Name="1-California" Code="1">
-                    <RouteDirectionList>
-                        <RouteDirection Code="Inbound" Name="Inbound to Downtown">
-                        </RouteDirection>
-                        
-                        <RouteDirection Code="Outbound" Name="Outbound to The Richmond District">
-                        </RouteDirection>
-                    </RouteDirectionList>
-                </Route>
-            </RouteList>
-        </Agency>
-    </AgencyList>
+	<AgencyList>
+		<Agency Name="SF-MUNI" HasDirection="True" Mode="Bus">
+			<RouteList>
+				<Route Name="1-California" Code="1">
+					<RouteDirectionList>
+						<RouteDirection Code="Inbound" Name="Inbound to Downtown">
+						</RouteDirection>
+						
+						<RouteDirection Code="Outbound" Name="Outbound to The Richmond District">
+						</RouteDirection>
+					</RouteDirectionList>
+				</Route>
+			</RouteList>
+		</Agency>
+	</AgencyList>
 </RTT>
