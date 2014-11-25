@@ -7,6 +7,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        if (NSClassFromString("XCTest") != nil) {
+            return false
+        }
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         let rootViewController = RootViewController(apiClient: nil)
         window?.rootViewController = rootViewController
