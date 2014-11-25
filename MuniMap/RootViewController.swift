@@ -5,14 +5,13 @@ class RootViewController: UIViewController {
     var mapview : MKMapView!
     var apiClient : ApiClient!
 
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+    init(apiClient newApiClient: ApiClient?) {
         super.init(nibName: nil, bundle: nil)
-        apiClient = ApiClient(URLSession: NSURLSession.sharedSession(), apiToken: "b4aed8bc-5bdb-455b-b905-c1208ff30e2e")
+        apiClient = newApiClient
     }
 
     required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        apiClient = ApiClient(URLSession: NSURLSession.sharedSession(), apiToken: "b4aed8bc-5bdb-455b-b905-c1208ff30e2e")
+        fatalError("init(coder:) has not been implemented")
     }
 
     override func viewDidLoad() {
