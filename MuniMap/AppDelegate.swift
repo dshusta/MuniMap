@@ -10,8 +10,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if (NSClassFromString("XCTest") != nil) {
             return false
         }
+        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        let rootViewController = RootViewController(apiClient: nil)
+        let apiClient = ApiClient(URLSession: NSURLSession.sharedSession(), apiToken: "b4aed8bc-5bdb-455b-b905-c1208ff30e2e")
+        let rootViewController = RootViewController(apiClient: apiClient)
         window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
 

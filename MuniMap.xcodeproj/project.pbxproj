@@ -36,6 +36,8 @@
 		9AA5121D1A1AFE65003BF6F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA5121C1A1AFE65003BF6F9 /* Images.xcassets */; };
 		9AA512201A1AFE65003BF6F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA5121E1A1AFE65003BF6F9 /* LaunchScreen.xib */; };
 		9AA5123E1A1AFF28003BF6F9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA5123D1A1AFF28003BF6F9 /* MapKit.framework */; };
+		9AD5AEE01A24390300D23D9D /* MuniAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AEDF1A24390300D23D9D /* MuniAnnotation.swift */; };
+		9AD5AEE11A24390300D23D9D /* MuniAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AEDF1A24390300D23D9D /* MuniAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +133,7 @@
 		9AC62C5D1A1B06AF006073ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC62C651A1B06C1006073ED /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Externals/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		9AC62C751A1B06C6006073ED /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Externals/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
+		9AD5AEDF1A24390300D23D9D /* MuniAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuniAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +207,7 @@
 			children = (
 				9A23F5D41A1C44E100EF3F03 /* ApiClient.swift */,
 				9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */,
+				9AD5AEDF1A24390300D23D9D /* MuniAnnotation.swift */,
 				9AA512171A1AFE65003BF6F9 /* RootViewController.swift */,
 				9A23F5D91A1C50D300EF3F03 /* Route.swift */,
 				9A23F5DF1A1C58F400EF3F03 /* RoutesParser.swift */,
@@ -455,6 +459,7 @@
 				9A23F5DA1A1C50D300EF3F03 /* Route.swift in Sources */,
 				9AA512161A1AFE65003BF6F9 /* AppDelegate.swift in Sources */,
 				9A8E43201A1EEDFB00D5CB97 /* StopsParser.swift in Sources */,
+				9AD5AEE01A24390300D23D9D /* MuniAnnotation.swift in Sources */,
 				9A8E43351A1EF32000D5CB97 /* CHCSVParser.m in Sources */,
 				9A23F5E01A1C58F400EF3F03 /* RoutesParser.swift in Sources */,
 				9A23F5D51A1C44E100EF3F03 /* ApiClient.swift in Sources */,
@@ -471,6 +476,7 @@
 				9A8E43161A1EED8900D5CB97 /* Stop.swift in Sources */,
 				9A1B59A81A1C4103006E8B0F /* RootViewController.swift in Sources */,
 				9A8E43211A1EEDFB00D5CB97 /* StopsParser.swift in Sources */,
+				9AD5AEE11A24390300D23D9D /* MuniAnnotation.swift in Sources */,
 				9A23F5E31A1C590A00EF3F03 /* RoutesParserSpec.swift in Sources */,
 				9A23F5DB1A1C50D300EF3F03 /* Route.swift in Sources */,
 				9A8E43231A1EEE6300D5CB97 /* StopsParserSpec.swift in Sources */,

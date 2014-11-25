@@ -40,12 +40,16 @@ class StopsParser : NSObject, NSXMLParserDelegate {
         if (elementName == "Stop") {
             let name = attributeDict["name"] as String
             let stopCode = attributeDict["StopCode"] as String
-            let stopCoordinate = stops[stopCode]!
-            let stop = Stop(name: name,
-                        stopCode: stopCode,
-                  stopCoordinate: stopCoordinate)
+            let stopCoordinate = stops[stopCode]
+            if (stopCoordinate != nil) {
+                let stop = Stop(name: name,
+                    stopCode: stopCode,
+                    stopCoordinate: stopCoordinate!)
 
-            collectedStops += [stop]
+                collectedStops += [stop]
+            } else {
+                println("No stop found for \(name) - \(stopCode)")
+            }
         }
     }
 }
