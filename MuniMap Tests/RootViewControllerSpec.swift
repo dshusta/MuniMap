@@ -76,7 +76,7 @@ class RootViewControllerSpec: QuickSpec {
                 }
 
                 it("should place a pin on the map for each stop") {
-                    let annotations = subject.mapview.annotations as [MuniAnnotation]
+                    let annotations = subject.mapview.annotations as! [MuniAnnotation]
                     let sortedAnnotations = annotations.sorted({ (annotation1: MuniAnnotation, annotation2: MuniAnnotation) -> Bool in
                         return annotation1.title < annotation2.title
                     })

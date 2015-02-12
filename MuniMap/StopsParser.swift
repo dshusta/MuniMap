@@ -9,7 +9,7 @@ class StopsParser : NSObject, NSXMLParserDelegate {
         collectedStops = []
 
         let stopsReferenceURL = NSBundle.mainBundle().URLForResource("stops", withExtension: "csv")!
-        var stopsCSV = NSArray(contentsOfCSVURL: stopsReferenceURL) as [[String]]
+        var stopsCSV = NSArray(contentsOfCSVURL: stopsReferenceURL) as! [[String]]
         stopsCSV.removeAtIndex(0)
 
         var permaStops = [String: CLLocationCoordinate2D]()
@@ -36,10 +36,10 @@ class StopsParser : NSObject, NSXMLParserDelegate {
         return collectedStops
     }
 
-    func parser(parser: NSXMLParser!, didStartElement elementName: String!, namespaceURI: String!, qualifiedName qName: String!, attributes attributeDict: [NSObject : AnyObject]!) {
+    func parser(parser: NSXMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [NSObject : AnyObject]) {
         if (elementName == "Stop") {
-            let name = attributeDict["name"] as String
-            let stopCode = attributeDict["StopCode"] as String
+            let name = attributeDict["name"] as! String
+            let stopCode = attributeDict["StopCode"] as! String
             let stopCoordinate = stops[stopCode]
             if (stopCoordinate != nil) {
                 let stop = Stop(name: name,

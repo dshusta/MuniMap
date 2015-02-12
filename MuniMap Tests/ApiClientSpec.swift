@@ -91,7 +91,7 @@ class ApiClientSpec: QuickSpec {
                     expect(firstStop.stopCoordinate.latitude).to(equal(37.781827))
                     expect(firstStop.stopCoordinate.longitude).to(equal(-122.391945))
 
-                    expect(countElements(stops!)).to(equal(2))
+                    expect(count(stops!)).to(equal(2))
                 }
             }
         }
