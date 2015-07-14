@@ -16,5 +16,21 @@
 				</Route>
 			</RouteList>
 		</Agency>
+        <Agency Name="SF-MUNI" HasDirection="True" Mode="Bus">
+            <RouteList>
+                <Route Name="1-California" Code="1">
+                    <RouteDirectionList>
+                        <RouteDirection Code="Outbound" Name="Outbound to The Richmond District">
+                            <StopList>
+                                <Stop name="32nd Ave and California St" StopCode="13547">
+                                </Stop>
+                                <Stop name="32nd Ave and Clement St" StopCode="13549">
+                                </Stop>
+                            </StopList>
+                        </RouteDirection>
+                    </RouteDirectionList>
+                </Route>
+            </RouteList>
+        </Agency>
 	</AgencyList>
 </RTT>

@@ -27,6 +27,7 @@ class ApiClient {
             return self == .Inbound ? "Inbound" : "Outbound"
         }
     }
+    
     func fetchStopsForRouteCode(routeCode: String, inboundOrOutbound: RouteDirection, stops: ([Stop]) -> ()) {
         let routeIdentifier = "SF-MUNI~\(routeCode)~\(inboundOrOutbound.description())"
         let path = "http://services.my511.org/Transit2.0/GetStopsForRoute.aspx?token=\(apiToken)&routeIDF=\(routeIdentifier)"
@@ -36,5 +37,4 @@ class ApiClient {
         })
         dataTask.resume()
     }
-
 }
