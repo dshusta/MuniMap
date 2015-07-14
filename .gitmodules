@@ -10,3 +10,6 @@
 [submodule "Externals/SWXMLHash"]
 	path = Externals/SWXMLHash
 	url = https://github.com/drmohundro/SWXMLHash.git
+[submodule "Externals/PivotalCoreKit"]
+	path = Externals/PivotalCoreKit
+	url = https://github.com/pivotal/PivotalCoreKit.git

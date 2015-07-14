@@ -21,6 +21,8 @@ class RootViewController: UIViewController {
         mapview.autoresizingMask = .FlexibleWidth | .FlexibleHeight
         view.addSubview(mapview)
 
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Nearby", style: .Plain, target: self, action: "didTapNearbyButton:")
+
         let span = MKCoordinateSpanMake(0.25, 0.25)
         let buenaVistaPark = CLLocationCoordinate2DMake(37.768783, -122.442113)
         let region = MKCoordinateRegionMake(buenaVistaPark, span)
@@ -44,6 +46,11 @@ class RootViewController: UIViewController {
                 }
             }
         }
+    }
+
+
+    func didTapNearbyButton(sender: AnyObject?) {
+        self.navigationController?.pushViewController(NearbyViewController(), animated: true);
     }
 }
 

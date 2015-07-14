@@ -27,10 +27,12 @@ class RootViewControllerSpec: QuickSpec {
 
         var subject : RootViewController!
         var apiClient: MockApiClient!
+        var navigationController: UINavigationController!
 
         beforeEach {
             apiClient = MockApiClient(URLSession: NSURLSession.sharedSession(), apiToken: "")
             subject = RootViewController(apiClient: apiClient)
+            navigationController = UINavigationController(rootViewController: subject)
 
             expect(subject.view).toNot(beNil())
         }
@@ -87,6 +89,16 @@ class RootViewControllerSpec: QuickSpec {
                     expect(sortedAnnotations[1].coordinate.latitude).to(equal(50))
                     expect(sortedAnnotations[1].coordinate.longitude).to(equal(90))
                 }
+            }
+        }
+
+        context("when user taps the Nearby button") {
+            beforeEach {
+                subject.navigationItem.rightBarButtonItem!.tap()
+            }
+
+            it("should show a list of Nearby stops") {
+                expect(navigationController.topViewController).to(beAnInstanceOf(NearbyViewController))
             }
         }
     }

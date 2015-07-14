@@ -38,6 +38,13 @@
 		9AA5123E1A1AFF28003BF6F9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA5123D1A1AFF28003BF6F9 /* MapKit.framework */; };
 		9AD5AEE01A24390300D23D9D /* MuniAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AEDF1A24390300D23D9D /* MuniAnnotation.swift */; };
 		9AD5AEE11A24390300D23D9D /* MuniAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD5AEDF1A24390300D23D9D /* MuniAnnotation.swift */; };
+		AE2FA9961B55BC55006B3E40 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2FA9941B55BC55006B3E40 /* NearbyViewController.swift */; };
+		AE2FA9971B55BC55006B3E40 /* NearbyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE2FA9951B55BC55006B3E40 /* NearbyViewController.xib */; };
+		AE2FA9A81B55BCA0006B3E40 /* NearbyViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2FA9A71B55BCA0006B3E40 /* NearbyViewControllerSpec.swift */; };
+		AE6C37B01B55C4AE00304FD1 /* libUIKit+PivotalSpecHelper-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6C37A51B55C46900304FD1 /* libUIKit+PivotalSpecHelper-StaticLib.a */; };
+		AE6C37B11B55C4B100304FD1 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6C37A71B55C46900304FD1 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a */; };
+		AE6C37B31B55C5BF00304FD1 /* NearbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2FA9941B55BC55006B3E40 /* NearbyViewController.swift */; };
+		AE6C37B41B55C5BF00304FD1 /* NearbyViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = AE2FA9951B55BC55006B3E40 /* NearbyViewController.xib */; };
 		AEFCC3F21B55933B009EEE06 /* next_stops.xml in Resources */ = {isa = PBXBuildFile; fileRef = AEFCC3F11B55933B009EEE06 /* next_stops.xml */; };
 		AEFCC4141B55AA73009EEE06 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFCC40B1B5599BF009EEE06 /* SWXMLHash.framework */; };
 /* End PBXBuildFile section */
@@ -105,6 +112,55 @@
 			proxyType = 2;
 			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
 			remoteInfo = "Nimble-OSXTests";
+		};
+		AE6C37A21B55C46900304FD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6C37971B55C46900304FD1 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEBCCC24168B999F0056EE83;
+			remoteInfo = "UIKit+PivotalCore-StaticLib";
+		};
+		AE6C37A41B55C46900304FD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6C37971B55C46900304FD1 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEBCCC64168B9AF10056EE83;
+			remoteInfo = "UIKit+PivotalSpecHelper-StaticLib";
+		};
+		AE6C37A61B55C46900304FD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6C37971B55C46900304FD1 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEC40C89174C203700474D2D;
+			remoteInfo = "UIKit+PivotalSpecHelperStubs-StaticLib";
+		};
+		AE6C37A81B55C46900304FD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6C37971B55C46900304FD1 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AEBCCC34168B99ED0056EE83;
+			remoteInfo = "UIKit-StaticLibSpec";
+		};
+		AE6C37AA1B55C46900304FD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6C37971B55C46900304FD1 /* UIKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AE118AA218D6B57000C90D6B;
+			remoteInfo = "UIKit-StaticLibSpecBundle";
+		};
+		AE6C37AC1B55C4A500304FD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6C37971B55C46900304FD1 /* UIKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AEBCCC63168B9AF10056EE83;
+			remoteInfo = "UIKit+PivotalSpecHelper-StaticLib";
+		};
+		AE6C37AE1B55C4A700304FD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE6C37971B55C46900304FD1 /* UIKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = AEC40C88174C203700474D2D;
+			remoteInfo = "UIKit+PivotalSpecHelperStubs-StaticLib";
 		};
 		AEFCC3FD1B55933B009EEE06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -185,6 +241,11 @@
 		9AC62C651A1B06C1006073ED /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Externals/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		9AC62C751A1B06C6006073ED /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Externals/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 		9AD5AEDF1A24390300D23D9D /* MuniAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuniAnnotation.swift; sourceTree = "<group>"; };
+		AE2FA9941B55BC55006B3E40 /* NearbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyViewController.swift; sourceTree = "<group>"; };
+		AE2FA9951B55BC55006B3E40 /* NearbyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearbyViewController.xib; sourceTree = "<group>"; };
+		AE2FA9A71B55BCA0006B3E40 /* NearbyViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyViewControllerSpec.swift; sourceTree = "<group>"; };
+		AE6C37961B55C3DE00304FD1 /* MuniMap Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MuniMap Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE6C37971B55C46900304FD1 /* UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKit.xcodeproj; path = Externals/PivotalCoreKit/UIKit/UIKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		AEFCC3F11B55933B009EEE06 /* next_stops.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = next_stops.xml; sourceTree = "<group>"; };
 		AEFCC4031B5599BF009EEE06 /* SWXMLHash.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SWXMLHash.xcodeproj; path = Externals/SWXMLHash/SWXMLHash.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -203,6 +264,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6C37B11B55C4B100304FD1 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a in Frameworks */,
+				AE6C37B01B55C4AE00304FD1 /* libUIKit+PivotalSpecHelper-StaticLib.a in Frameworks */,
 				9A1B598D1A1B0FFC006E8B0F /* Nimble.framework in Frameworks */,
 				9A1B59891A1B0FF8006E8B0F /* Quick.framework in Frameworks */,
 			);
@@ -263,6 +326,8 @@
 				9A23F5D41A1C44E100EF3F03 /* ApiClient.swift */,
 				9AA512151A1AFE65003BF6F9 /* AppDelegate.swift */,
 				9AD5AEDF1A24390300D23D9D /* MuniAnnotation.swift */,
+				AE2FA9941B55BC55006B3E40 /* NearbyViewController.swift */,
+				AE2FA9951B55BC55006B3E40 /* NearbyViewController.xib */,
 				9AA512171A1AFE65003BF6F9 /* RootViewController.swift */,
 				9A23F5D91A1C50D300EF3F03 /* Route.swift */,
 				9A23F5DF1A1C58F400EF3F03 /* RoutesParser.swift */,
@@ -292,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				9A23F5D71A1C483100EF3F03 /* ApiClientSpec.swift */,
+				AE2FA9A71B55BCA0006B3E40 /* NearbyViewControllerSpec.swift */,
 				9A1B59A61A1C406C006E8B0F /* RootViewControllerSpec.swift */,
 				9A23F5E21A1C590A00EF3F03 /* RoutesParserSpec.swift */,
 				9A8E43221A1EEE6300D5CB97 /* StopsParserSpec.swift */,
@@ -305,6 +371,8 @@
 		9AC62C5C1A1B06AF006073ED /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AE6C37961B55C3DE00304FD1 /* MuniMap Tests-Bridging-Header.h */,
+				AE6C37971B55C46900304FD1 /* UIKit.xcodeproj */,
 				9AC62C751A1B06C6006073ED /* Nimble.xcodeproj */,
 				9AC62C651A1B06C1006073ED /* Quick.xcodeproj */,
 				9AC62C5D1A1B06AF006073ED /* Info.plist */,
@@ -332,6 +400,18 @@
 				9AC62C7F1A1B06C6006073ED /* NimbleTests.xctest */,
 				9AC62C811A1B06C6006073ED /* Nimble.framework */,
 				9AC62C831A1B06C6006073ED /* NimbleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE6C37981B55C46900304FD1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE6C37A31B55C46900304FD1 /* libUIKit+PivotalCore-StaticLib.a */,
+				AE6C37A51B55C46900304FD1 /* libUIKit+PivotalSpecHelper-StaticLib.a */,
+				AE6C37A71B55C46900304FD1 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a */,
+				AE6C37A91B55C46900304FD1 /* UIKit-StaticLibSpec.app */,
+				AE6C37AB1B55C46900304FD1 /* UIKit-StaticLibSpecBundle.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -379,6 +459,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				AE6C37AF1B55C4A700304FD1 /* PBXTargetDependency */,
+				AE6C37AD1B55C4A500304FD1 /* PBXTargetDependency */,
 				9AC62C611A1B06AF006073ED /* PBXTargetDependency */,
 			);
 			name = MuniMapTests;
@@ -432,6 +514,10 @@
 				{
 					ProductGroup = AEFCC4041B5599BF009EEE06 /* Products */;
 					ProjectRef = AEFCC4031B5599BF009EEE06 /* SWXMLHash.xcodeproj */;
+				},
+				{
+					ProductGroup = AE6C37981B55C46900304FD1 /* Products */;
+					ProjectRef = AE6C37971B55C46900304FD1 /* UIKit.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -499,6 +585,41 @@
 			remoteRef = 9AC62C821A1B06C6006073ED /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		AE6C37A31B55C46900304FD1 /* libUIKit+PivotalCore-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libUIKit+PivotalCore-StaticLib.a";
+			remoteRef = AE6C37A21B55C46900304FD1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE6C37A51B55C46900304FD1 /* libUIKit+PivotalSpecHelper-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libUIKit+PivotalSpecHelper-StaticLib.a";
+			remoteRef = AE6C37A41B55C46900304FD1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE6C37A71B55C46900304FD1 /* libUIKit+PivotalSpecHelperStubs-StaticLib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libUIKit+PivotalSpecHelperStubs-StaticLib.a";
+			remoteRef = AE6C37A61B55C46900304FD1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE6C37A91B55C46900304FD1 /* UIKit-StaticLibSpec.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "UIKit-StaticLibSpec.app";
+			remoteRef = AE6C37A81B55C46900304FD1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE6C37AB1B55C46900304FD1 /* UIKit-StaticLibSpecBundle.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UIKit-StaticLibSpecBundle.octest";
+			remoteRef = AE6C37AA1B55C46900304FD1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		AEFCC3FE1B55933B009EEE06 /* QuickFocused-OSXTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
@@ -549,6 +670,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AA512201A1AFE65003BF6F9 /* LaunchScreen.xib in Resources */,
+				AE2FA9971B55BC55006B3E40 /* NearbyViewController.xib in Resources */,
 				9A8E43381A1EF37A00D5CB97 /* stops.csv in Resources */,
 				9AA5121D1A1AFE65003BF6F9 /* Images.xcassets in Resources */,
 			);
@@ -579,6 +701,7 @@
 				9AD5AEE01A24390300D23D9D /* MuniAnnotation.swift in Sources */,
 				9A8E43351A1EF32000D5CB97 /* CHCSVParser.m in Sources */,
 				9A23F5E01A1C58F400EF3F03 /* RoutesParser.swift in Sources */,
+				AE2FA9961B55BC55006B3E40 /* NearbyViewController.swift in Sources */,
 				9A23F5D51A1C44E100EF3F03 /* ApiClient.swift in Sources */,
 				9A8E43151A1EED8800D5CB97 /* Stop.swift in Sources */,
 			);
@@ -588,6 +711,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6C37B31B55C5BF00304FD1 /* NearbyViewController.swift in Sources */,
+				AE6C37B41B55C5BF00304FD1 /* NearbyViewController.xib in Sources */,
+				AE2FA9A81B55BCA0006B3E40 /* NearbyViewControllerSpec.swift in Sources */,
 				9A1B59A91A1C4186006E8B0F /* AppDelegate.swift in Sources */,
 				9A23F5D81A1C483100EF3F03 /* ApiClientSpec.swift in Sources */,
 				9A8E43161A1EED8900D5CB97 /* Stop.swift in Sources */,
@@ -611,6 +737,16 @@
 			isa = PBXTargetDependency;
 			target = 9AA5120F1A1AFE65003BF6F9 /* MuniMap */;
 			targetProxy = 9AC62C601A1B06AF006073ED /* PBXContainerItemProxy */;
+		};
+		AE6C37AD1B55C4A500304FD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIKit+PivotalSpecHelper-StaticLib";
+			targetProxy = AE6C37AC1B55C4A500304FD1 /* PBXContainerItemProxy */;
+		};
+		AE6C37AF1B55C4A700304FD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIKit+PivotalSpecHelperStubs-StaticLib";
+			targetProxy = AE6C37AE1B55C4A700304FD1 /* PBXContainerItemProxy */;
 		};
 		AEFCC4131B55AA6B009EEE06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -745,11 +881,22 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Externals/PivotalCoreKit/UIKit/**",
+				);
 				INFOPLIST_FILE = "MuniMap Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MuniMap/MuniMap-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MuniMap Tests/MuniMap Tests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuniMap.app/MuniMap";
 			};
@@ -764,11 +911,22 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/Externals/PivotalCoreKit/UIKit/**",
+				);
 				INFOPLIST_FILE = "MuniMap Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MuniMap/MuniMap-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MuniMap Tests/MuniMap Tests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MuniMap.app/MuniMap";
 			};
 			name = Release;
