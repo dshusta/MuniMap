@@ -1,5 +1,5 @@
 import Foundation
-
+import SWXMLHash
 
 
 class ApiClient {
@@ -33,8 +33,19 @@ class ApiClient {
         let path = "http://services.my511.org/Transit2.0/GetStopsForRoute.aspx?token=\(apiToken)&routeIDF=\(routeIdentifier)"
 
         let dataTask = urlSession.dataTaskWithURL(NSURL(string: path)!, completionHandler: { (data : NSData!, response : NSURLResponse!, error : NSError!) -> Void in
+
             stops(self.stopsParser.parseStopsData(data))
         })
         dataTask.resume()
+    }
+
+    func fetchNextDeparturesForStopCode(stopCode: String, departures: ([Int]) -> ()) {
+        let path = "http://services.my511.org/Transit2.0/GetNextDeparturesByStopCode.aspx?token=\(apiToken)&stopcode=\(stopCode)"
+
+        urlSession.dataTaskWithURL(NSURL(string: path)!, completionHandler: { (data : NSData!, response : NSURLResponse!, error : NSError!) -> Void in
+            let xml = SWXMLHash.parse(data)
+            let departuresList = xml["RTT"]["AgencyList"]["Agency"]["RouteList"]["Route"]["RouteDirectionList"]["RouteDirection"]["StopList"]["Stop"]["DepartureTimeList"]
+            departures(departuresList.children.map{$0.element!.text!.toInt()!})
+        }).resume()
     }
 }

@@ -1,23 +1,23 @@
 import Quick
 import Nimble
 
-// Mocks by subclassing, like an animal.
-class MockURLSessionDataTask : NSURLSessionDataTask {
-    var didResume : Bool = false
-    override func resume() {
-        didResume = true
-    }
-}
-
 class ApiClientSpec: QuickSpec {
     override func spec() {
+        // Mocks by subclassing, like an animal.
+        class MockURLSessionDataTask : NSURLSessionDataTask {
+            var didResume : Bool = false
+            override func resume() {
+                didResume = true
+            }
+        }
+
         class MockURLSession : NSURLSession {
             override init() {}
-            var lastURL : NSURL!
+            var lastURL : NSURL?
             var lastCompletionHandler: ((NSData!, NSURLResponse!, NSError!) -> Void)!
             var lastDataTask : MockURLSessionDataTask!
 
-            private override func dataTaskWithURL(url: NSURL, completionHandler: ((NSData!, NSURLResponse!, NSError!) -> Void)?) -> NSURLSessionDataTask {
+            override func dataTaskWithURL(url: NSURL, completionHandler: ((NSData!, NSURLResponse!, NSError!) -> Void)?) -> NSURLSessionDataTask {
                 lastURL = url
                 lastCompletionHandler = completionHandler
                 lastDataTask = MockURLSessionDataTask()
@@ -94,6 +94,32 @@ class ApiClientSpec: QuickSpec {
                     expect(count(stops!)).to(equal(4))
                 }
             }
+        }
+
+        describe("getting next departures for a stop") {
+            var departuresFetched : [Int]?
+            beforeEach {
+                subject.fetchNextDeparturesForStopCode("13003", departures: { (departures: [Int]) -> () in
+                    departuresFetched = departures
+                })
+            }
+
+            it("should fetch depatures from the URLSession") {
+                let expectedPath = "http://services.my511.org/Transit2.0/GetNextDeparturesByStopCode.aspx?token=TOKEN&stopcode=13003"
+                expect(urlSession.lastURL).to(equal(NSURL(string: expectedPath)!))
+                expect(urlSession.lastDataTask.didResume).to(beTruthy())
+            }
+
+            it("should pass departures to the block") {
+                let url = NSBundle(forClass: self.dynamicType).URLForResource("next_stops", withExtension: "xml")!
+                let departuresData = NSData(contentsOfURL: url)!
+
+                urlSession.lastCompletionHandler(departuresData, nil, nil)
+
+                expect(departuresFetched).to(equal([11, 33, 53]))
+            }
+
+
         }
     }
 }

@@ -1,0 +1,23 @@
+<RTT>
+    <AgencyList>
+        <Agency Name="SF-MUNI" HasDirection="True" Mode="Bus">
+            <RouteList>
+                <Route Name="10-Townsend" Code="10">
+                    <RouteDirectionList>
+                        <RouteDirection Code="Inbound" Name="Inbound to Pacific Heights">
+                            <StopList>
+                                <Stop name="2nd St and Brannan St" StopCode="13003">
+                                    <DepartureTimeList>
+                                        <DepartureTime>11</DepartureTime>
+                                        <DepartureTime>33</DepartureTime>
+                                        <DepartureTime>53</DepartureTime>
+                                    </DepartureTimeList>
+                                </Stop>
+                            </StopList>
+                        </RouteDirection>
+                    </RouteDirectionList>
+                </Route>
+            </RouteList>
+        </Agency>
+    </AgencyList>
+</RTT>
